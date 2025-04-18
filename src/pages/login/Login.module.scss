@@ -118,9 +118,6 @@
 }
 
 @media (max-width: 800px) {
-  .Login_content {
-    // grid-template-columns: 1fr;
-  }
 
   .Login__img_pag {
     display: none;
@@ -129,4 +126,7 @@
   .Login_pag_wrapper {
     padding: 1rem;
   }
+}
+
+.Login_pag_wrapper{
 }

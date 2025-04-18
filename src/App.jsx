@@ -12,7 +12,7 @@ import {
 import { ProtectedRoutes } from "./components";
 
 function App() {
-  const user = false
+  const user = true
   const routes = createBrowserRouter([
     {
       path: "/",
