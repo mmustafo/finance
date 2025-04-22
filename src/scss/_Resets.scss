@@ -15,6 +15,12 @@ body {
   color: $grey-500;
   line-height: $line-height-100;
   font-size: $text-preset-4;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+#root{
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -34,13 +40,13 @@ main {
   background-color: #f2f2f2;
   height: 100vh;
 }
-#root {
+.main-leyout {
   display: flex;
   display: grid;
   grid-template-columns: 300px 1fr;
 }
 @media (max-width: 700px) {
-  #root {
+  .main-leyout {
     display: flex;
     display: grid;
     grid-template-columns: 1fr;
@@ -48,3 +54,11 @@ main {
 }
 
 
+.container{
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

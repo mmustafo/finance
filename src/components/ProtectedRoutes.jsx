@@ -1,12 +1,13 @@
+import React from "react";
 import { Navigate } from "react-router-dom";
 
-function ProtectedRoutes({ children, user }) {
-  if (user) {
-    return children;
-  } else {
+const ProtectedRoutes = ({ user, children }) => {
+  if (!user) {
+    // Agar user mavjud bo'lmasa, login sahifasiga yo'naltirish
     return <Navigate to="/login" />;
   }
-  return <div>ProtectedRoutes</div>;
-}
 
-export default ProtectedRoutes;
+  return children; // Foydalanuvchi tizimga kirgan bo'lsa, children (MainLayout) ko'rsatiladi
+};
+
+export default ProtectedRoutes;  // default eksport qilish

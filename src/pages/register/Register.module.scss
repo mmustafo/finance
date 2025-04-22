@@ -1,133 +1,82 @@
-.Login_content {
-     display: grid;
-     grid-template-columns: 560px 1fr;
-     height: 100vh;
-     width: 100%;
-     background-color: #fff;
-   }
-   
-   .Login__img_pag {
-     background-image: url("/image/illustration-authentication.svg");
-     background-size: cover;
-     background-position: center;
-     height: 100vh;
-   }
-   
-   .Login__footer__text {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     padding: 4rem;
-     height: 100%;
-     color: #fff;
-   }
-   
-   .Login__img__image__log {
-     margin-top: 4rem;
-     width: 150px;
-   }
-   
-   .Login__img__Text__h3 {
-     font-weight: 700;
-     font-size: 3.2rem;
-     margin-bottom: 2.4rem;
-   }
-   
-   .Login__img__Text__p {
-     font-size: 1.4rem;
-     line-height: 1.6;
-   }
-   
-   .Login_pag_wrapper {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 100vh;
-     padding: 2rem;
-   }
-   
-   .Login_pag {
-     width: 100%;
-     max-width: 460px;
-     background-color: #ffffff;
-     padding: 3.2rem;
-     border-radius: 1.2rem;
-     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-   }
-   
-   .Login__form {
-     width: 100%;
-   }
-   
-   .Login__contents {
-     display: flex;
-     flex-direction: column;
-     gap: 1.5rem;
-   }
-   
-   .Login__contents h3 {
-     font-size: 2.4rem;
-     font-weight: 600;
-     text-align: center;
-     margin-bottom: 1rem;
-   }
-   
-   .Login__contents label {
-     font-size: 1.2rem;
-     font-weight: 500;
-   }
-   
-   .Login__contents input {
-     padding: 0.8rem 1rem;
-     border: 1px solid #ccc;
-     border-radius: 6px;
-     font-size: 1rem;
-   }
-   
-   .Login__contents button {
-     margin-top: 1rem;
-     padding: 0.8rem;
-     background-color: #1e88e5;
-     color: #fff;
-     border: none;
-     border-radius: 6px;
-     font-size: 1rem;
-     cursor: pointer;
-     transition: background-color 0.3s ease;
-   }
-   
-   .Login__contents button:hover {
-     background-color: #1565c0;
-   }
-   
-   .Login__contents small {
-     display: block;
-     text-align: center;
-     margin-top: 1rem;
-     font-size: 0.9rem;
-   }
-   
-   .Login__contents a {
-     color: #1e88e5;
-     text-decoration: none;
-     margin-left: 0.3rem;
-   }
-   
-   .Login__contents a:hover {
-     text-decoration: underline;
-   }
-   
-   @media (max-width: 800px) {
-     .Login_content {
-       // grid-template-columns: 1fr;
-     }
-   
-     .Login__img_pag {
-       display: none;
-     }
-   
-     .Login_pag_wrapper {
-       padding: 1rem;
-     }
-   }
-   
+.login {
+  height: 100%;
+}
+
+.container {
+  height: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 2rem;
+}
+
+.login__left {
+  background-image: url("../../../public/image/illustration-authentication.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex !important;
+  flex-direction: column;
+  border-radius: 1.2rem;
+  h3 {
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 2.4rem;
+    line-height: 120%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  img {
+    margin-bottom: auto;
+    padding: 4rem;
+  }
+  p {
+    color: #fff;
+    line-height: 150%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.login__right {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+  .login__from {
+    // background-color:red !important;
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .all__login__register__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    max-height: 422px;
+    border-radius: 1.2rem;
+    max-width: 56rem;
+    width: 100%;
+    padding: 4rem;
+  }
+}
+
+.login__title {
+  margin-bottom: 3.2rem;
+  color: #201f24;
+  font-size: 3.2rem;
+  // padding-top: 3rem;
+}
+.login__button {
+  background-color: #201f24;
+  //  margin-top: 1rem;
+  color: #fff;
+}
+
+.footer__div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-bottom: 2rem;
+}

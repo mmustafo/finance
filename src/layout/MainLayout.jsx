@@ -5,13 +5,13 @@ import FsideBar from "../components/sideBar/FsideBar";
 
 function MainLayout() {
   return (
-    <>
+    <div className="main-leyout">
       <SideBar />
       <main>
         <Outlet />
       </main>
       <FsideBar/>
-    </>
+    </div>
   );
 }
 
