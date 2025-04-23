@@ -80,3 +80,22 @@
   align-items: center;
   // padding-bottom: 2rem;
 }
+@media (max-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .login__left {
+    display: none;
+    background-image: none;
+    img{
+      display: none;
+    }
+    h3{
+      display: none;
+    }
+    p{
+      display: none;
+    }
+  }
+}
