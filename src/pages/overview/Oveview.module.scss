@@ -1,0 +1,240 @@
+.overview {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.overview__h1 {
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+}
+.overview__butgets__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  width: 100%;
+  margin-bottom: 3.4rem;
+}
+.overview__butgets____div {
+  background-color: #ffffff;
+  padding: 2.4rem 2.4rem 2.4rem;
+  border-radius: 1.2rem;
+  max-width: 337px;
+  width: 100%;
+}
+.overview__butgets__h4 {
+  color: #696868;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.overview__butgets__h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.overview__butgets____div:hover {
+  background-color: #201f24;
+  .overview__butgets__h2 {
+    color: #ffffff;
+  }
+  .overview__butgets__h4 {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 950px) {
+  .overview__butgets__h2 {
+    font-size: 2rem;
+  }
+
+  .overview__butgets__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    width: 100%;
+    margin-bottom: 3.4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .overview__butgets__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .overview__butgets__wrapper {
+    display: flex;
+    //     flex-wrap: wrap;
+    width: 100%;
+  }
+  .overview__butgets____div {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .overview__butgets____div {
+     max-width: 370px;
+    width: 100% ;
+  }
+}
+
+.overview__pots__content {
+  max-width: 608px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+
+  h2.red {
+    font-size: 20px;
+    color: #1c1c1c;
+    font-weight: 600;
+  }
+
+  p {
+    float: right;
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+  }
+
+  .overview__pots__wrappers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .overview__pots__tootal {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      background-color: #f1ede9;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        object-fit: contain;
+      }
+
+      .overview__wr__saved {
+        &__h4 {
+          font-size: 3.2rem;
+          color: #6d6d6d;
+        }
+
+        &__h2 {
+          font-size: 28px;
+          font-weight: bold;
+          color: #1c1c1c;
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .overview__chekadagi__div {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: flex-start;
+
+      .overview__pots__right__wrapper {
+        width: 45%;
+        min-width: 120px;
+
+        .overview__pots__right__2dv {
+          border-left: 4px solid #ccc;
+          padding-left: 12px;
+
+          h4 {
+            font-size: 14px;
+            color: #6d6d6d;
+          }
+
+          h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1c1c1c;
+          }
+        }
+
+        &:nth-child(1) .overview__pots__right__2dv {
+          border-color: #1abc9c;
+        }
+        &:nth-child(2) .overview__pots__right__2dv {
+          border-color: #2c3e50;
+        }
+        &:nth-child(3) .overview__pots__right__2dv {
+          border-color: #3498db;
+        }
+        &:nth-child(4) .overview__pots__right__2dv {
+          border-color: #e67e22;
+        }
+      }
+    }
+  }
+}
+
+.transactions__content {
+  background-color: #fff;
+  margin-top: 3.2rem;
+  max-width: 608px;
+  border-radius: 1.6rem;
+  width: 100%;
+}
+.transactions__top__text {
+}
+.transactions__top__text__h2 {
+  padding-top: 3.2rem;
+  padding-left: 3.2rem;
+}
+.transactions__top__text__h3 {
+  padding-left: 3.2rem;
+}
+.overview__transactions__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.overview__transactions__left {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.overview__transactions__left__img {
+  max-width: 4rem;
+  border-radius: 50%;
+}
+.overview__transactions__left__h3 {
+}
+.overview__transactions__right {
+}
+.overview__transactions__right__h2 {
+  margin-bottom: 1rem;
+}
+.overview__transactions__right__p {
+}
+
+.green {
+  color: #27ae60;
+}
+
+.black {
+  color: #000;
+}

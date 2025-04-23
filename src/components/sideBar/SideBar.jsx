@@ -8,13 +8,13 @@ function SideBar() {
         <div className={style.nav__link}>
           <img
             className={style.nav__item__imge}
-            src="/image/logo-large.svg"
+            src="../public/image/logo-large.svg"
             alt="Logo"
           />
           <Link to="/" className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="/image/icon-nav-overview.svg"
+              src="../public/image/icon-nav-overview.svg"
               alt="Overview icon"
             />
             <span className={style.nav__link_h4}>Overview</span>
@@ -25,7 +25,7 @@ function SideBar() {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="/image/icon-nav-transactions.svg"
+              src="../public/image/icon-nav-transactions.svg"
               alt="Transactions icon"
             />
             <span className={style.nav__link_h4}>Transactions</span>
@@ -36,7 +36,7 @@ function SideBar() {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="/image/icon-nav-budgets.svg"
+              src="../public/image/icon-nav-budgets.svg"
               alt="Budgets icon"
             />
             <span className={style.nav__link_h4}>Budgets</span>
@@ -47,7 +47,7 @@ function SideBar() {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="/image/icon-nav-pots.svg"
+              src="../public/image/icon-nav-pots.svg"
               alt="Posts icon"
             />
             <span className={style.nav__link_h4}>Pots</span>
@@ -58,7 +58,7 @@ function SideBar() {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="/image/icon-nav-recurring-bills.svg"
+              src="../public/image/icon-nav-recurring-bills.svg"
               alt="Recurring bills icon"
             />
             <span className={style.nav__link_h4}>Recurring bills</span>

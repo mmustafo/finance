@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import FormInput from "../../components/fominput/FormInput";
 import style from "./Register.module.scss";
-import { useRegister } from "../../hooks/useRegister"; // Import the custom hook
+import { useRegister } from "../../hooks/useRegister";
 
 function Register() {
   const { data, ispending, register } = useRegister();
@@ -14,7 +14,7 @@ function Register() {
     const password = formData.get("password");
     const displayName = formData.get("displayName");
 
-    register(displayName, email, password); // Call register method from the hook
+    register(displayName, email, password); 
   };
 
   return (
