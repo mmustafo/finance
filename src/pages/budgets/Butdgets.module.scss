@@ -92,3 +92,8 @@
 .Budgets__chart{
      height: fit-content;
 }
+
+.Budgets__content{
+     overflow-y: auto;
+     height: 100vh;
+}

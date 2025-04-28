@@ -17,12 +17,12 @@ function Budgets() {
 
       <div className={style.Budgets__wrapper}>
         <div className={style.Budgets__main}>
-          
+          {/* Chap taraf: Chart */}
           <div className={style.Budgets__chart}>
             {data.budgets && <Chart budgets={data.budgets} />}
           </div>
 
-         
+          {/* O'ng taraf: Ma'lumotlar */}
           <div className={style.Budgets__info}>
             {data.budgets?.slice(0, 3).map((budget, idx) => (
               <div key={idx} className={style.BudgetCard}>
