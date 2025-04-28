@@ -285,3 +285,26 @@
   align-items: center;
   gap: 2.4rem;
 }
+
+@media (max-width:850px) {
+  .transactions__Recurring_bils__df{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .recurring__bils__content{
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width:850px) {
+  .pots__budgets__df{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
