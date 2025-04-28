@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import style from "./SideBar.module.scss";
 
-function SideBar() {
+function SideBar({ setShowSidebar, showSidebar }) {
   return (
-    <header className={style.header}>
+    <header className={`header ${showSidebar ? "sidebar" : ""}`}>
       <nav className={style.nav}>
         <div className={style.nav__link}>
           <img
             className={style.nav__item__imge}
-            src="../public/image/logo-large.svg"
+            src={
+              showSidebar
+                ? "../public/image/logo-small.svg"
+                : "../public/image/logo-large.svg"
+            }
             alt="Logo"
           />
           <Link to="/" className={style.nav__item}>
@@ -17,7 +21,7 @@ function SideBar() {
               src="../public/image/icon-nav-overview.svg"
               alt="Overview icon"
             />
-            <span className={style.nav__link_h4}>Overview</span>
+            <span className="nav__link_h4">Overview</span>
           </Link>
         </div>
 
@@ -28,7 +32,7 @@ function SideBar() {
               src="../public/image/icon-nav-transactions.svg"
               alt="Transactions icon"
             />
-            <span className={style.nav__link_h4}>Transactions</span>
+            <span className="nav__link_h4">Transactions</span>
           </div>
         </Link>
 
@@ -39,7 +43,7 @@ function SideBar() {
               src="../public/image/icon-nav-budgets.svg"
               alt="Budgets icon"
             />
-            <span className={style.nav__link_h4}>Budgets</span>
+            <span className="nav__link_h4">Budgets</span>
           </div>
         </Link>
 
@@ -50,7 +54,7 @@ function SideBar() {
               src="../public/image/icon-nav-pots.svg"
               alt="Posts icon"
             />
-            <span className={style.nav__link_h4}>Pots</span>
+            <span className="nav__link_h4">Pots</span>
           </div>
         </Link>
 
@@ -61,15 +65,21 @@ function SideBar() {
               src="../public/image/icon-nav-recurring-bills.svg"
               alt="Recurring bills icon"
             />
-            <span className={style.nav__link_h4}>Recurring bills</span>
+            <span className="nav__link_h4">Recurring bills</span>
           </div>
         </Link>
 
-        <img
-          className={style.nav__item__footer__img}
-          src="/image/icon-minimize-menu.svg"
-          alt="Minimize menu icon"
-        />
+        <button
+          className="show__sibebar__btn"
+          onClick={() => setShowSidebar(!showSidebar)}
+        >
+          {" "}
+          <img
+            className={style.nav__item__footer__img}
+            src="/image/icon-minimize-menu.svg"
+            alt="Minimize menu icon"
+          />
+        </button>
       </nav>
     </header>
   );

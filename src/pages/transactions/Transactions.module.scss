@@ -1,0 +1,132 @@
+.Transactions_content {
+}
+.Transactions__wrapper {
+  background-color: #ffffff;
+  margin: 0 4rem 4rem 4rem;
+  padding: 4rem;
+  border-radius: 10px;
+}
+.Transactions__inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Transactions__input__Search {
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+
+.Transactions__input__Search::placeholder {
+  font-size: 1.5rem;
+}
+
+.Transactions__input__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.Transactions__input__label {
+  color: #696868;
+  font-size: 1.4rem;
+}
+.Transactions__input__Latest {
+  padding: 1.3rem;
+  max-width: 113px;
+  border-radius: 10px;
+  border-color: #98908b;
+  // border: 2px solid;
+}
+.Transactions__input {
+  padding: 1.3rem;
+  max-width: 177px;
+  border-radius: 10px;
+  border-color: #98908b;
+  // border: 2px solid;
+}
+
+.Transactions__input__Latest::placeholder {
+  font-size: 1.6rem;
+  color: #201f24;
+}
+
+.Transactions__input::placeholder {
+  font-size: 1.5rem;
+  color: #201f24;
+}
+
+.transactions__content__h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding: 4rem;
+  color: #201f24;
+}
+
+.Transactions__input__right {
+  display: flex;
+  align-self: center;
+  gap: 2.4rem;
+}
+
+.Transactions__category__content {
+  margin-top: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.Transactions__category____ortadagi {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.user__category__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transactions__users__img {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.user__category____ortadagi {
+  display: flex;
+  align-items: start;
+  gap: 3.2rem;
+  
+}
+
+.user__category__oxiri__h3 {
+  font-size: 18px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.user__category__content{
+     margin-bottom: 1.6rem;
+}
+
+.people__left__user{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+
+@media (max-width:500px) {
+     .user__category____ortadagi{
+          display: none;
+     }
+}
+
+.user__category____ortadagi__h4{
+     text-align: start;
+}

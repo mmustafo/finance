@@ -1,9 +1,4 @@
-.header {
-  background-color: #201f24;
-  height: 100vh;
-  padding-top: 4rem;
-  padding-right: 2.4rem;
-}
+
 .FsideBar {
   max-width: 768px;
   width: 100%;
@@ -58,7 +53,7 @@
   .nav__link_h4 {
     color: #201f24;
   }
-}
+} 
 
 .FsideBar {
   height: inherit;
@@ -129,3 +124,10 @@
     bottom: -900px;
   }
 }
+
+@media (max-width:2600px) {
+  .FsideBar{
+    display: none;
+   }
+}
+

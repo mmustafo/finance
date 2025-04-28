@@ -3,7 +3,7 @@ import style from "./SideBar.module.scss";
 
 function FsideBar() {
   return (
-    <header className={style.FsideBar}>
+    <header className={`fsidebar ${style.FsideBar}`}>
       <nav className={style.Fnav}>
         <Link to="/" className={style.Fnav__items}>
           <div className={style.Fnav__item}>

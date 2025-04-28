@@ -1,9 +1,3 @@
-.overview {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
 .overview__h1 {
   margin-bottom: 3.2rem;
   margin-top: 3.2rem;
@@ -79,8 +73,8 @@
 
 @media (max-width: 500px) {
   .overview__butgets____div {
-     max-width: 3u70px;
-    width: 100% ;
+    max-width: 3u70px;
+    width: 100%;
   }
 }
 
@@ -237,4 +231,57 @@
 
 .black {
   color: #000;
+}
+
+.pots__budgets__df {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.recurring__bils__content {
+  background-color: #fff;
+  max-width: 428px;
+  width: 100%;
+  height: 327px;
+  border-radius: 1.2rem;
+}
+
+.recurring__bils__content__top__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+
+.recurring__bils__wrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.paid_bills{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  background-color: #F8F4F0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recurring__texts{
+  text-align: center;
+  padding: 3.2rem;
+}
+
+.transactions__Recurring_bils__df{
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 }

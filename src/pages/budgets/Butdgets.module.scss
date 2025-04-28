@@ -1,0 +1,94 @@
+.Budgets__content {
+  padding: 20px;
+}
+
+.Budgets__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BudgetCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.BudgetCard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BudgetCard__spent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.BudgetCard__latest {
+  margin-top: 20px;
+}
+
+.BudgetCard__latest__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BudgetCard__transactions {
+  margin-top: 10px;
+}
+
+.TransactionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.TransactionItem__left {
+  display: flex;
+  align-items: center;
+}
+
+.TransactionItem__left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.TransactionItem__right h2 {
+  font-size: 18px;
+}
+
+.Budgets__main {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.Budgets__chart {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.Budgets__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.BudgetCard {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.Budgets__chart{
+     height: fit-content;
+}
