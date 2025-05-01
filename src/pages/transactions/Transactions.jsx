@@ -20,20 +20,30 @@ function Transactions() {
           <div className={style.Transactions__input__right}>
             <div class={style.Transactions__input__wrapper}>
               <span class={style.Transactions__input__label}>Sort by</span>
-              <input
+              <select
                 class={style.Transactions__input__Latest}
-                type="text"
-                placeholder="Latest"
-              />
+                name=""
+                id=""
+              >
+                <option  value="Latest">Latest</option>
+                <option value="Latest">Latest</option>
+                <option value="A to Z">A to Z</option>
+                <option value="Z to A">Z to A</option>
+                <option value="Highest">Highest</option>
+                <option value="Lowest">Lowest</option>
+              </select>
             </div>
 
             <div class={style.Transactions__input__wrapper}>
               <span class={style.Transactions__input__label}>Category</span>
-              <input
-                class={style.Transactions__input}
-                type="text"
-                placeholder="All Transactions"
-              />
+             <select name="" id="" class={style.Transactions__input}>
+              <option value="All Transactions">All Transactions</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Bills">Bills</option>
+              <option value="Groceries">Groceries</option>
+              <option value="Dining Out">Dining Out</option>
+              <option value="Transportation">Transportation</option>
+             </select>
             </div>
           </div>
         </div>

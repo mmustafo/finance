@@ -1,4 +1,3 @@
-
 .FsideBar {
   max-width: 768px;
   width: 100%;
@@ -53,7 +52,7 @@
   .nav__link_h4 {
     color: #201f24;
   }
-} 
+}
 
 .FsideBar {
   height: inherit;
@@ -112,22 +111,118 @@
   margin-top: 8rem;
 }
 
-
-@media (max-width:500px) {
-  .Fnav__item__link{
+@media (max-width: 500px) {
+  .Fnav__item__link {
     display: none;
   }
   .Fnav__item {
     padding: 1rem;
   }
-  .FsideBar{
+  .FsideBar {
     bottom: -900px;
   }
 }
 
-@media (max-width:2600px) {
-  .FsideBar{
+@media (max-width: 2600px) {
+  .FsideBar {
     display: none;
-   }
+  }
 }
 
+.FsideBar {
+  display: none;
+}
+
+.header {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .FsideBar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #201f24;
+    z-index: 1000;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .Fnav {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .Fnav__item {
+    padding: 1rem;
+  }
+
+  .Fnav__item__link {
+    display: none;
+  }
+}
+
+.Fnav__item {
+  padding: 1rem 2.5rem 1.2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+}
+
+.Fnav__item__link {
+  color: #b3b3b3;
+}
+
+.Fnav__item:hover {
+  background-color: #f8f4f0;
+
+  .Fnav__item__link {
+    color: #201f24;
+  }
+}
+
+.active {
+  background-color: #ffffff;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+
+  .Fnav__item__link {
+    color: #201f24;
+    font-weight: 700;
+  }
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+  padding: 1.6rem 3.2rem 1.6rem 3.5rem;
+  border-top-right-radius: 1.2rem;
+  border-end-end-radius: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.nav__link_h4 {
+  color: #b3b3b3;
+  font-weight: 700;
+}
+
+.nav__item.active {
+  background-color: #ffffff;
+  box-shadow: inset 4px 0 0 #201f24;
+}
+
+.nav__item.active .nav__link_h4 {
+  color: #201f24;
+  font-weight: 700;
+}

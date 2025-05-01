@@ -89,11 +89,124 @@
   border-radius: 10px;
   padding: 20px;
 }
-.Budgets__chart{
-     height: fit-content;
+.Budgets__chart {
+  height: fit-content;
 }
 
-.Budgets__content{
-     overflow-y: auto;
-     height: 100vh;
+.Budgets__content {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.Budgets__content__loading__content {
+  background-color: #f8f4f0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin: 0.8rem;
+}
+
+.Budgets__content__loading {
+  width: 50%;
+  height: 2.4rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #277c78;
+  margin-left: 4px;
+}
+
+.budgets__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); // Orqa fon 30% qoraygan
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+  // Modal kontent (ichidagi oyna)
+  &__content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1001;
+  }
+
+  // Modal yuqoridagi title + close tugmasi joylashuvi
+  &__top__df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      transition: transform 1s ease;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.budgets__modal__category {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.budgets__modal__legend {
+  color: #696868;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.budget__modal__text__p {
+  margin-bottom: 1.5rem;
+}
+
+.budgets__modal__input__create {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.budget__modal__btn {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #201f24;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.budget__right__add__button {
+  max-width: 154px;
+  background-color: #201f24;
+  color: #fff;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-radius: 10px;
 }

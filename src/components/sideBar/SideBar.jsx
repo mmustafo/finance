@@ -10,15 +10,15 @@ function SideBar({ setShowSidebar, showSidebar }) {
             className={style.nav__item__imge}
             src={
               showSidebar
-                ? "../public/image/logo-small.svg"
-                : "../public/image/logo-large.svg"
+                ? "../public/assets/images/logo-small.svg"
+                : "../public/assets/images/logo-large.svg"
             }
             alt="Logo"
           />
           <Link to="/" className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="../public/image/icon-nav-overview.svg"
+              src="../public/assets/images/icon-nav-overview.svg"
               alt="Overview icon"
             />
             <span className="nav__link_h4">Overview</span>
@@ -29,7 +29,7 @@ function SideBar({ setShowSidebar, showSidebar }) {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="../public/image/icon-nav-transactions.svg"
+              src="../public/assets/images/icon-nav-transactions.svg"
               alt="Transactions icon"
             />
             <span className="nav__link_h4">Transactions</span>
@@ -40,7 +40,7 @@ function SideBar({ setShowSidebar, showSidebar }) {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="../public/image/icon-nav-budgets.svg"
+              src="../public/assets/images/icon-nav-budgets.svg"
               alt="Budgets icon"
             />
             <span className="nav__link_h4">Budgets</span>
@@ -51,7 +51,7 @@ function SideBar({ setShowSidebar, showSidebar }) {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="../public/image/icon-nav-pots.svg"
+              src="../public/assets/images/icon-nav-pots.svg"
               alt="Posts icon"
             />
             <span className="nav__link_h4">Pots</span>
@@ -62,7 +62,7 @@ function SideBar({ setShowSidebar, showSidebar }) {
           <div className={style.nav__item}>
             <img
               className={style.nav__link__image}
-              src="../public/image/icon-nav-recurring-bills.svg"
+              src="../public/assets/images/icon-nav-recurring-bills.svg"
               alt="Recurring bills icon"
             />
             <span className="nav__link_h4">Recurring bills</span>

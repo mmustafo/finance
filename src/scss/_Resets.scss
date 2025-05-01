@@ -22,6 +22,76 @@ body {
   width: 100vw;
 }
 
+#my__chart .apexcharts-legend {
+  display: none;
+}
+
+#my__chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin: auto;
+  background-color: #ffff;
+  width: 100%;
+  border-radius: 10px;
+  // height: fit-content;
+  max-width: max-content;
+  // margin-bottom: -13rem;
+  // height: max-content;
+  // height: 700px;
+  padding: 3rem;
+}
+
+.chart__title__contents {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.chart__legend__content__theme__box {
+  height: 2.1rem;
+  width: 4px;
+  // background-color: #277C78;
+  border-radius: 10px;
+}
+
+.chart__legend__content__right__text {
+  display: flex;
+  align-items: start;
+  gap: 0.7rem;
+}
+
+.chart__legend__content__right__text__h4 {
+}
+
+.chart__legend__content__left__theme {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.chart__legend__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1.6rem;
+  max-width: 428px;
+}
+
+.chart__legend__content__left__theme {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
 #root {
   height: 100%;
   width: 100%;
@@ -60,7 +130,7 @@ main {
 }
 
 .FsideBar {
-  background-color: yellow;
+  // background-color: yellow;
 }
 
 .container {
@@ -84,7 +154,6 @@ main {
   .nav__link_h4 {
     display: none;
   }
-
 }
 
 .show__sibebar__btn {
@@ -93,20 +162,13 @@ main {
   border: none;
 }
 
-@media (max-width: 700px) {
-  .header {
-    display: none;
-  }
-}
+
 
 @media (max-width: 1700px) {
   .fsidebar {
     display: none;
-
   }
 }
-
-
 
 .overview {
   margin: 0 auto;
@@ -115,10 +177,77 @@ main {
   height: 100vh;
   overflow-y: auto;
   width: 100%;
-} 
+}
 
-.nav__link_h4{
+.nav__link_h4 {
   color: black;
   font-weight: 700;
   font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  .header {
+    display: none;
+  }
+  .fsideBar{
+    display: flex !important;
+  }
+}
+
+
+.main-leyout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+}
+
+.header {
+  background-color: #201f24;
+  height: 100vh;
+  width: 100%;
+  padding: 4rem 2.4rem 0;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.FsideBar {
+  display: none;
+
+  @media (max-width: 700px) {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #201f24;
+    padding: 1rem 0;
+    z-index: 1000;
+    justify-content: center;
+  }
+}
+
+.Fnav {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    gap: 1.5rem;
+  }
+}
+
+.Fnav__item__link {
+  color: #b3b3b3;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }

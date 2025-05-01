@@ -51,7 +51,7 @@ function Overview() {
                 {data.pots &&
                   data.pots.map((pot) => {
                     return (
-                      <div key={pot.id}>
+                      <div className={style.Overview__pots__left__df} key={pot.id}>
                         <div className={style.overview__pots__right__wrapper}>
                           <div className={style.overview__pots__right__2dv}>
                             <h4>{pot.name}</h4>
